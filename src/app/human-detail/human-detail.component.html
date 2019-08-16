@@ -1,0 +1,8 @@
+<div *ngIf="human">
+  <h2>{{human.name | uppercase}} 详情</h2>
+  <div><span>ID: </span>{{human.id}}</div>
+  <div>
+    <label>名字：{{human.name}}</label>
+  </div>
+</div>
+<button (click)="goBack()">回到上一页</button>

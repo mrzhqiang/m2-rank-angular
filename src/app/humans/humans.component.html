@@ -1,0 +1,11 @@
+<h2>玩家列表</h2>
+
+<ul class="humans">
+  <li *ngFor="let human of humans">
+    <a routerLink="/detail/{{human.id}}">
+      <span class="badge">{{human.id}}</span> {{human.name}}
+    </a>
+  </li>
+</ul>
+
+<app-human-detail [human]="selectedHuman"></app-human-detail>

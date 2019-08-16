@@ -1,0 +1,9 @@
+<h3>顶级玩家</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let human of humans" class="col-1-4"
+     routerLink="/detail/{{human.id}}">
+    <div class="module human">
+      <h4>{{human.name}}</h4>
+    </div>
+  </a>
+</div>
